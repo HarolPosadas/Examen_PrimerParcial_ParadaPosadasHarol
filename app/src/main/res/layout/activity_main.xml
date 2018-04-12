@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteY="8dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/usr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -24,11 +24,11 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/usr"
+            android:layout_below="@+id/usr"
             android:layout_marginTop="44dp"
             android:ems="10"
             android:hint="Password"
@@ -36,11 +36,21 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="250px"
+            android:layout_height="50px"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="42dp"
-            android:text="TextView" />
+            android:text="           LOGIN" />
+
+        <Button
+            android:id="@+id/Entrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/pass"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="46dp"
+            android:onClick="Validar"
+            android:text="Entrar" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
